@@ -1,0 +1,2761 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+.img-logo{
+  width: 50%;
+}
+
+.nav-item{
+  padding-top: 0.3rem;
+}
+
+.nav-link.a-list{
+  color: #1f2f4e;
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: normal;
+  margin-left: 0.4rem;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.nav-link.a-list:hover,
+.nav-link.a-list.active,
+.nav-link.a-list:focus{
+  color:#1f2f4e;
+
+}
+
+.nav-link.a-list::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:#00c4e7;
+  transform: translateX(-100%);
+  transition: all 0.3s linear;
+  border-radius: 5px;
+}
+
+.nav-link.a-list:hover::before{
+  transform: translateX(0);
+  z-index: -1;
+}
+
+.dropdown-item.a-list{
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #1f2f4e;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.dropdown-item.a-list::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:#00c4e7;
+  transform: translateX(-100%);
+  transition: all 0.3s linear;
+  border-radius: 5px;
+}
+
+.dropdown-item.a-list:hover::before{
+  transform: translateX(0);
+  z-index: -1;
+}
+
+.dropdown-item.a-list:hover{
+  color:#1f2f4e;
+
+}
+
+.btn.contact-btn{
+  background-color: #1f2f4e;
+  color: white;
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: normal;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.btn.contact-btn::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:#00c4e7;
+  transform: translateX(-100%);
+  transition: all 0.3s linear;
+}
+
+.btn.contact-btn:hover::before{
+  transform: translateX(0);
+  z-index: -1;
+}
+
+.btn.contact-btn:hover{
+  color: black;
+}
+
+
+.navbar-brand.navbar-a{
+  width: 50%;
+}
+
+.dropdown-menu{
+  background-color: #e7f9fb;
+  z-index: 99;
+}
+
+.dropdown-menu li a.a-list{
+  color: black;
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+/*nav bar close*/
+
+/*index or home page css starts*/
+
+.curved-shape {
+  width: 100%; /* Full width of the container */
+  max-width: 70px; /* Limit the maximum width for responsiveness */
+  height: 330px; /* Adjust the height as needed */
+  background-color: #00c4e7; /* Light blue color */
+  border-bottom-left-radius: 90px; /* Rounded bottom-left corner */
+  opacity: 0;
+  transform: translateY(90px); /* Start position */
+  animation: slide-in 1s ease-out forwards; /* Trigger animation */
+ margin-left: 1.7rem;
+}
+
+@keyframes slide-in {
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Final position */
+  }
+}
+
+.curved-shapetwo{
+  width: 100%; /* Full width of the container */
+  max-width: 55px; /* Limit the maximum width for responsiveness */
+  height: 360px; /* Adjust the height as needed */
+  background-color: #00c4e7; /* Light blue color */
+  border-top-right-radius: 90px; /* Rounded bottom-left corner */
+  margin-top: 18rem;
+  opacity: 0;
+  transform: translateY(90px); /* Start position */
+  animation: slide-in 1s ease-out forwards; /* Trigger animation */
+  animation-delay: 1s;
+}
+
+/*blue shapes and img div strts*/
+.shape-container {
+position: relative;
+width: 100%;
+max-width: 380px; /* Adjust the max width for responsiveness */
+height: 500px; /* Adjust as needed */
+}
+
+.shape-blue {
+position: absolute;
+width: 100%; /* Full width of the container */
+height: 100%; /* Full height of the container */
+background-color: #00c4e7; /* Light blue */
+border-top-right-radius: 50%; /* Rounded top-right corner */
+opacity: 0; /* Initially invisible */
+transform: translateY(-20px); /* Positioned slightly above */
+animation: fadeInTop 1s ease-out forwards; /* Animation settings */
+animation-delay: 3s;
+}
+
+.shape-dark {
+position: absolute;
+width: 60%; /* Half width of the container */
+height: 70%; /* Half height of the container */
+background-color: #1d2b53; /* Dark blue */
+border-top-right-radius: 50%; /* Rounded top-left corner */
+left: 0; /* Align to the left */
+top: 0; /* Align to the top */
+margin-left: 13rem;
+margin-top: 4rem;
+opacity: 0; /* Initially invisible */
+transform: translateY(-20px); /* Positioned slightly above */
+animation: fadeInTop 1s ease-out forwards; /* Animation settings */
+animation-delay: 4s
+}
+
+/* Keyframes for Fade-In Effect */
+@keyframes fadeInTop {
+0% {
+  opacity: 0;
+  transform: translateY(20px); /* Start from above */
+}
+100% {
+  opacity: 1;
+  transform: translateY(0); /* Settle into the original position */
+}
+}
+
+.doctor-img{
+position: absolute;
+left: 0; /* Align to the left */
+top: 0; /* Align to the top */
+width: 100%;
+margin-left: -2.7rem;
+margin-top:0.8rem;
+opacity: 0; /* Start invisible */
+transform: translateX(-50%); /* Position off-screen to the left */
+animation: slideIn 1s ease-out forwards; /* Slide-in animation */
+animation-delay: 2s
+}
+
+/* Slide-in animation */
+@keyframes slideIn {
+0% {
+  transform: translateX(-50%); /* Off-screen */
+  opacity: 0; /* Invisible */
+}
+100% {
+  transform: translateX(0); /* Fully visible in position */
+  opacity: 1; /* Fully visible */
+}
+}
+
+.h1.About-us-h1{
+  color: #1f2f4e;
+  font-family: "Poppins", serif;
+font-weight: 900;
+font-style: normal;
+opacity: 0; /* Initially invisible */
+transform: translateY(20px); /* Positioned slightly above */
+animation: fadeInTop 1s ease-out forwards; /* Animation settings */
+animation-delay: 4s
+
+}
+
+/* Keyframes for Fade-In Effect */
+@keyframes fadeInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Start from above */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Settle into the original position */
+  }
+}
+
+.hr-tag{
+  opacity: 0;
+  animation: fadeInFromLeft 1s ease-out forwards;
+  animation-delay: 5s
+}
+
+/* Keyframes for the animation */
+@keyframes fadeInFromLeft {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  50% {
+    width: 50%; /* Mid-point expansion */
+    opacity: 0.5;
+  }
+  100% {
+    width: 100%; /* Full width */
+    opacity: 1; /* Fully visible */
+  }
+}
+
+.container.heading-cont{
+  padding-top: 7rem !important;
+}
+
+.h3.management-name {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+  color:black;
+  margin-top: -0.6rem;
+  overflow: hidden;
+  position: relative;
+  animation: fadeInLeftToRight 1s ease-out forwards;
+  opacity: 0;
+  animation-delay: 6s
+
+}
+
+@keyframes fadeInLeftToRight {
+  0% {
+    opacity: 0;               /* Start with text invisible */
+    transform: translateX(-50px); /* Start off-screen to the left */
+  }
+  100% {
+    opacity: 1;               /* Fully visible */
+    transform: translateX(0); /* Move to original position */
+  }
+}
+
+/* Sliding blue color effect */
+.management-name::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #00c4e7;
+  animation: slideBlue 1s forwards;
+  animation-delay: 7s
+
+}
+
+/* Keyframes for the sliding animation */
+@keyframes slideBlue {
+  to {
+    left: 100%;
+  
+  }
+}
+
+.headerimg2{
+  width: 100%;
+  
+}
+
+.liberty-para{
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+  color:black;
+  text-align: justify;
+}
+
+.container.smallsq-divs{
+  background-color:white;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  padding-top: 1rem;
+  }
+  
+.h5.backpain-h5{
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: normal;
+  color:black;
+}
+
+.container.smallsq-divs2{
+  background-color:#13c5dd;
+  border-radius: 30px;
+}
+
+.container.sqaure-cont{
+      width: 20rem;
+      height: 30vh;
+      border: 1px solid black;
+}
+
+.h5.Management-para{
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: normal;
+  color:black;
+}
+
+.container.lightblue-container{
+  background-color: #e7f9fb; 
+  border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;}
+
+.container.lightblue-container:hover,
+.container.lightblue-container:focus,
+.container.lightblue-container:active{
+  background-color:#13c5dd; 
+  border-radius: 20px;
+  color: white;
+}
+
+.h5.Management-para:hover{
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: normal;
+  color:white;
+}
+
+
+.container.Management-cont{
+padding-top: 2rem;
+}
+
+.h2.Migrain-h2{
+  font-family: "Poppins", serif;
+  font-weight: 900;
+  font-style: normal;
+  color:#1f2f4e;
+}
+
+.Migrain-para{
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+  color:black;
+  text-align: justify;
+}
+
+.h5.h5-Certifications{
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #070738;
+}
+
+.Certifications-para{
+  font-family: "Poppins", serif;
+font-weight: 400;
+font-style: normal;
+color: black;
+}
+
+.max-auto.img2{
+  transform: scale(1);
+  transition: 400ms;
+  overflow:hidden !important;
+  border: 20px;
+}
+
+.max-auto.img2:hover{
+  transform: scale(1.1); 
+  transition: 400ms; 
+  cursor: pointer;
+}
+
+.max-auto.img3{
+  transform: scale(1);
+  transition: 400ms;
+  overflow:hidden !important;
+  border: 20px;
+  cursor: pointer;
+}
+
+.max-auto.img3:hover{
+  transform: scale(1.1); 
+  transition: 400ms; 
+  cursor: pointer;
+}
+
+
+.max-auto.img4{
+  transform: scale(1);
+  transition: 400ms;
+  overflow:hidden !important;
+  border: 20px;
+}
+
+.max-auto.img4:hover{
+  transform: scale(1.1); 
+  transition: 400ms; 
+  cursor: pointer;
+}
+
+.max-auto.img5{
+  transform: scale(1);
+  transition: 400ms;
+  overflow:hidden !important;
+  border: 20px;
+}
+
+.max-auto.img5:hover{
+  transform: scale(1.1); 
+  transition: 400ms; 
+  cursor: pointer;
+}
+
+.max-auto.img6{
+  transform: scale(1);
+  transition: 400ms;
+  overflow:hidden !important;
+  border: 20px;
+}
+
+.max-auto.img6:hover{
+  transform: scale(1.1); 
+  transition: 400ms; 
+  cursor: pointer;
+}
+
+.max-auto.img7{
+  transform: scale(1);
+  transition: 400ms;
+  overflow:hidden !important;
+  border: 20px;
+}
+
+.max-auto.img7:hover{
+  transform: scale(1.1); 
+  transition: 400ms;
+  cursor: pointer;
+}
+
+.col-md-6.tv-img-col{
+  justify-content: end;
+  display: flex;
+  }
+  
+  .h2.h2-acceptedinsurances{
+      font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #070738;
+  }
+  
+  .Insurances-para{
+      font-family: "Poppins", serif;
+      font-weight: 400;
+      font-style: normal;
+      color: black;
+      text-align: justify;
+  }
+  
+  .container.blue-cont{
+      width: 65%;
+      background-color: #13c5dd;
+      padding-top: 1rem;
+      padding-bottom: 0.7rem;
+  }
+  
+  .contactnum-para{
+      font-family: "Poppins", serif;
+      font-weight: 500;
+      font-style: normal;
+      color: white;
+      padding-top: 1rem;
+  }
+  
+  .container.lightblue-cont{
+      width: 65%;
+      background-color:#e7f9fb;
+      padding-top: 1rem;
+      padding-bottom: 0.3rem;
+      text-align: center;
+  }
+  
+  .lightblue-para{
+      font-family: "Poppins", serif;
+      font-weight: 500;
+      font-style: normal;
+      color: black;
+      text-align: center;
+      
+  }
+  
+  .col-md-6.doubleblue-colmns{
+      padding-top: 2rem;
+  }
+  
+  
+  /* Slideshow container */
+  .round-img{
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+  }
+  
+  .col-md-5.review-col5{
+      display: inline-flex;
+  }
+  
+  .person-name-para{
+      padding-left: 0.7rem;
+      padding-top: 0.7rem;
+      font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #1f2f4e;
+  }
+  
+  div.stars {
+  
+    width: 270px;
+  
+    display: inline-block;
+  
+  }
+  
+   .mt-200{
+       margin-top:200px;  
+   }
+  
+  input.star { display: none; }
+  
+   
+  
+  label.star {
+  
+    float: right;
+  
+    padding: 4px;
+  
+    font-size: 20px;
+  
+    color: #1f2f4e;
+  
+    transition: all .2s;
+  
+  }
+  
+  
+  input.star:checked ~ label.star:before {
+  
+    content: '\f005';
+  
+    color: #13c5dd;
+  
+    transition: all .25s;
+  
+  }
+  
+   
+  input.star-5:checked ~ label.star:before {
+  
+    color: #13c5dd;
+  
+    text-shadow: 0 0 20px #13c5dd;
+  
+  }
+  
+   
+  
+  input.star-1:checked ~ label.star:before { color: #13c5dd; }
+  
+      
+  
+  label.star:hover,
+  label.star:active
+   { transform: rotate(-15deg) scale(1.3); }
+  
+   
+  
+  label.star:before {
+  
+    content: '\f006';
+  
+    font-family: FontAwesome;
+  
+  }
+  
+  .col-md-7.stars-col-7{
+      padding-top: 0.3rem;
+  }
+  
+  .carousel-inner.main-slider-cont{
+  padding-bottom: 5rem;
+  padding-top: 1rem;
+  }
+  
+  .container.arrowicon-cont{
+      padding-top: 0.8rem;
+      border-top-left-radius: 20px; /* Adjust the value as needed */
+    border-top-right-radius: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* Bottom shadow */
+    background-color:  #B8E4DE;
+  }
+  
+  .container.starsicon-div{
+      padding-top: 0.8rem;
+      padding-bottom: 0.8rem;
+      border-bottom-left-radius: 20px; /* Adjust the value as needed */
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* Bottom shadow */
+  
+   
+  }
+  
+  
+  /*
+  .blueshape-container {
+      position: relative;
+      width: 100%;
+      max-width: 500px; 
+      height:518px;
+      margin: auto;
+    }
+  
+    .custom-shape {
+      position: absolute;
+      width: 100%; 
+      height:100%; 
+      background-color: #e7f9fb;
+      border-radius: 0 100px 0 0;   
+   
+    }
+  
+    .women-img{
+      position: absolute;
+  
+      top: 0;
+      left: 0;
+      margin-top: -0.9rem;
+      margin-left: 1.6rem;
+    }*/
+
+
+/*mobile view*/
+    @media only screen and (min-width: 300px) and  (max-width:767px){
+
+      .curved-shape {
+       display: none;
+      }
+  
+    
+      .curved-shapetwo{
+        display: none;
+      }
+      .col-md-1{
+        display: none;
+      }
+      .img-logo{
+        width: 100%;
+    }
+    .container.heading-cont{
+      padding-top: 0rem !important;
+  }
+ .shape-blue {
+display: none;
+
+}
+
+.shape-dark {
+  display: none;
+}
+
+.shape-container {
+  padding-top: 0rem;
+  }
+
+  .doctor-img{
+    position: absolute;
+    left: 0; /* Align to the left */
+    top: 0; /* Align to the top */
+    margin-left: -1rem;
+    margin-top:3rem;
+    opacity: 0; /* Start invisible */
+    transform: translateX(-50%); /* Position off-screen to the left */
+    animation: slideIn 1s ease-out forwards; /* Slide-in animation */
+    animation-delay: 4s;
+    width: 100%;
+  }
+   /* Slide-in animation */
+@keyframes slideIn {
+0% {
+  transform: translateX(-50%); /* Off-screen */
+  opacity: 0; /* Invisible */
+}
+100% {
+  transform: translateX(0); /* Fully visible in position */
+  opacity: 1; /* Fully visible */
+}
+}
+
+  .doctor-img img{
+    width: 100%;
+  }
+
+  .h1.About-us-h1{
+    color: #1f2f4e;
+    font-family: "Poppins", serif;
+  font-weight: 900;
+  font-style: normal;
+  opacity: 0; /* Initially invisible */
+  transform: translateY(20px); /* Positioned slightly above */
+  animation: fadeInTop 1s ease-out forwards; /* Animation settings */
+
+}
+
+/* Keyframes for Fade-In Effect */
+@keyframes fadeInTop {
+    0% {
+      opacity: 0;
+      transform: translateY(20px); /* Start from above */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* Settle into the original position */
+    }
+  }
+
+  .hr-tag{
+    opacity: 0;
+    animation: fadeInFromLeft 1s ease-out forwards;
+    animation-delay: 1s
+}
+
+/* Keyframes for the animation */
+@keyframes fadeInFromLeft {
+    0% {
+      width: 0;
+      opacity: 0;
+    }
+    50% {
+      width: 50%; /* Mid-point expansion */
+      opacity: 0.5;
+    }
+    100% {
+      width: 100%; /* Full width */
+      opacity: 1; /* Fully visible */
+    }
+  }
+
+
+.h3.management-name {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    color:black;
+    margin-top: -0.6rem;
+    overflow: hidden;
+    position: relative;
+    animation: fadeInLeftToRight 1s ease-out forwards;
+    opacity: 0;
+    animation-delay: 2s
+
+}
+
+@keyframes fadeInLeftToRight {
+    0% {
+      opacity: 0;               /* Start with text invisible */
+      transform: translateX(-50px); /* Start off-screen to the left */
+    }
+    100% {
+      opacity: 1;               /* Fully visible */
+      transform: translateX(0); /* Move to original position */
+    }
+  }
+
+  /* Sliding blue color effect */
+.management-name::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #00c4e7;
+    animation: slideBlue 1s forwards;
+    animation-delay: 3s
+
+  }
+  
+  /* Keyframes for the sliding animation */
+  @keyframes slideBlue {
+    to {
+      left: 100%;
+    
+    }
+  }
+  .shape-container {
+    position: relative;
+    width: 100%;
+    max-width: 500px; /* Adjust size as needed */
+    height: 490px;
+    margin: auto;
+    padding-top: 2rem;
+    }
+
+    .container-fluid.Accepted-Insurances-mobcon{
+      padding-bottom: 3rem;
+    }
+
+  }
+
+/*tablet view*/
+@media only screen and (min-width: 768px) and  (max-width:1024px){
+.curved-shape {
+ display: none;
+}
+
+
+.curved-shapetwo{
+  display: none;
+}
+.col-md-1{
+  display: none;
+}
+.img-logo{
+  width: 100%;
+}
+
+.container.heading-cont{
+padding-top: 0rem !important;
+}
+
+.h1.About-us-h1{
+color: #1f2f4e;
+font-family: "Poppins", serif;
+font-weight: 900;
+font-style: normal;
+opacity: 0; /* Initially invisible */
+transform: translateY(20px); /* Positioned slightly above */
+animation: fadeInTop 1s ease-out forwards; /* Animation settings */
+
+}
+
+/* Keyframes for Fade-In Effect */
+@keyframes fadeInTop {
+0% {
+  opacity: 0;
+  transform: translateY(20px); /* Start from above */
+}
+100% {
+  opacity: 1;
+  transform: translateY(0); /* Settle into the original position */
+}
+}
+
+.hr-tag{
+opacity: 0;
+animation: fadeInFromLeft 1s ease-out forwards;
+animation-delay: 1s
+}
+
+/* Keyframes for the animation */
+@keyframes fadeInFromLeft {
+0% {
+  width: 0;
+  opacity: 0;
+}
+50% {
+  width: 50%; /* Mid-point expansion */
+  opacity: 0.5;
+}
+100% {
+  width: 100%; /* Full width */
+  opacity: 1; /* Fully visible */
+}
+}
+
+
+.h3.management-name {
+font-family: "Poppins", serif;
+font-weight: 500;
+font-style: normal;
+color:black;
+margin-top: -0.6rem;
+overflow: hidden;
+position: relative;
+animation: fadeInLeftToRight 1s ease-out forwards;
+opacity: 0;
+animation-delay: 2s
+
+}
+
+@keyframes fadeInLeftToRight {
+0% {
+  opacity: 0;               /* Start with text invisible */
+  transform: translateX(-50px); /* Start off-screen to the left */
+}
+100% {
+  opacity: 1;               /* Fully visible */
+  transform: translateX(0); /* Move to original position */
+}
+}
+
+/* Sliding blue color effect */
+.management-name::before {
+content: '';
+position: absolute;
+top: 0;
+left: -100%;
+width: 100%;
+height: 100%;
+background-color: #00c4e7;
+animation: slideBlue 1s forwards;
+animation-delay: 3s
+
+}
+
+/* Keyframes for the sliding animation */
+@keyframes slideBlue {
+to {
+  left: 100%;
+
+}
+}
+
+.shape-container {
+position: relative;
+width: 100%;
+max-width: 380px; /* Adjust the max width for responsiveness */
+height: 500px; /* Adjust as needed */
+}
+
+.shape-blue {
+position: absolute;
+width: 100%; /* Full width of the container */
+height: 100%; /* Full height of the container */
+background-color: #00c4e7; /* Light blue */
+border-top-right-radius: 50%; /* Rounded top-right corner */
+opacity: 0; /* Initially invisible */
+transform: translateY(-20px); /* Positioned slightly above */
+animation: fadeInTop 1s ease-out forwards; /* Animation settings */
+animation-delay: 5s;
+}
+
+.shape-dark {
+position: absolute;
+width: 60%; /* Half width of the container */
+height: 70%; /* Half height of the container */
+background-color: #1d2b53; /* Dark blue */
+border-top-right-radius: 50%; /* Rounded top-left corner */
+left: 0; /* Align to the left */
+top: 0; /* Align to the top */
+margin-left: 10rem;
+margin-top: 4rem;
+opacity: 0; /* Initially invisible */
+transform: translateY(-20px); /* Positioned slightly above */
+animation: fadeInTop 1s ease-out forwards; /* Animation settings */
+animation-delay: 6s
+}
+
+/* Keyframes for Fade-In Effect */
+@keyframes fadeInTop {
+0% {
+  opacity: 0;
+  transform: translateY(20px); /* Start from above */
+}
+100% {
+  opacity: 1;
+  transform: translateY(0); /* Settle into the original position */
+}
+}
+
+.doctor-img{
+position: absolute;
+left: 0; /* Align to the left */
+top: 0; /* Align to the top */
+width: 100%;
+margin-left: -9rem;
+margin-top:0.8rem;
+opacity: 0; /* Start invisible */
+transform: translateX(-50%); /* Position off-screen to the left */
+animation: slideIn 1s ease-out forwards; /* Slide-in animation */
+animation-delay: 4s
+}
+
+/* Slide-in animation */
+@keyframes slideIn {
+0% {
+  transform: translateX(-50%); /* Off-screen */
+  opacity: 0; /* Invisible */
+}
+100% {
+  transform: translateX(0); /* Fully visible in position */
+  opacity: 1; /* Fully visible */
+}
+}
+
+}
+/*index or home css ends*/    
+
+/*about us css starts*/
+.headerimg2{
+  width: 100%;
+}
+
+.h1.about-us-h1{
+color: #1f2f4e;
+font-family: "Poppins", serif;
+font-weight: 900;
+font-style: normal;
+opacity: 0; /* Initially invisible */
+transform: translateY(20px); /* Positioned slightly above */
+animation: fadeInTop 1s ease-out forwards; /* Animation settings */
+animation-delay: 5s;
+
+}
+
+/* Keyframes for Fade-In Effect */
+@keyframes fadeInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Start from above */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Settle into the original position */
+  }
+}
+
+.hr-tag2{
+  opacity: 0; /* Start invisible */
+    animation: fadeInFromLeft 1s ease-out forwards;
+    animation-delay: 6s;
+
+}
+
+/* Keyframes for the animation */
+@keyframes fadeInFromLeft {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  50% {
+    width: 50%; /* Mid-point expansion */
+    opacity: 1;
+  }
+  100% {
+    width: 50%; /* Full width */
+    opacity: 1; /* Fully visible */
+  }
+}
+
+.container.heading-cont2{
+  padding-top: 7rem !important;
+}
+
+.h3.dr-name{
+font-family: "Poppins", serif;
+font-weight: 500;
+font-style: normal;
+color: #13c5dd;
+margin-top: -0.6rem;
+opacity: 0; /* Initially invisible */
+transform: translateY(20px); /* Positioned slightly above */
+animation: fadeInTop 1s ease-out forwards; /* Animation settings */
+animation-delay: 7s;
+
+}
+
+
+/* Keyframes for Fade-In Effect */
+@keyframes fadeInTop {
+0% {
+  opacity: 0;
+  transform: translateY(20px); /* Start from above */
+}
+100% {
+  opacity: 1;
+  transform: translateY(0); /* Settle into the original position */
+}
+}
+
+.h3.Management-name{
+font-family: "Poppins", serif;
+font-weight: 500;
+font-style: normal;
+color:black;
+margin-top: -0.6rem;
+overflow: hidden;
+  position: relative;
+  animation: fadeInLeftToRight 1s ease-out forwards;
+  opacity: 0;
+  animation-delay: 8s;
+
+}
+
+@keyframes fadeInLeftToRight {
+0% {
+  opacity: 0;               /* Start with text invisible */
+  transform: translateX(-50px); /* Start off-screen to the left */
+}
+100% {
+  opacity: 1;               /* Fully visible */
+  transform: translateX(0); /* Move to original position */
+}
+}
+
+/* Sliding blue color effect */
+.h3.Management-name::before {
+content: '';
+position: absolute;
+top: 0;
+left: -100%;
+width: 100%;
+height: 100%;
+background-color: #00c4e7;
+animation: slideBlue 1s forwards;
+animation-delay: 9s;
+
+}
+
+/* Keyframes for the sliding animation */
+@keyframes slideBlue {
+to {
+  left: 100%;
+
+}
+}
+
+.circle-container {
+  position: relative;
+  width: 100%;
+  max-width: 500px; /* Adjust size as needed */
+  height: 550px;
+  margin: auto;
+  padding-top: 2rem;
+}
+
+.circle {
+  width: 330px;
+  height: 330px;
+  background-color: #00c0d1; /* Blue color */
+  border-radius: 50%; /* Makes it a circle */
+  opacity: 0; /* Initially invisible */
+  transform: translateY(-20px); /* Positioned slightly above */
+  animation: fadeInTop 1s ease-out forwards; /* Animation settings */
+  animation-delay: 3s;
+
+}
+
+ /* Keyframes for Fade-In Effect */
+ @keyframes fadeInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Start from above */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Settle into the original position */
+  }
+}
+
+.circle-outline {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 370px;
+    height: 370px;
+  border: 15px solid transparent; /* Transparent to control visibility */
+  border-right: 10px solid #1a2944; /* Navy color for the outline */
+  border-bottom: 10px solid #1a2944; /* Navy color for the outline */
+  border-radius: 50%;
+  transform: rotate(-60deg); /* Rotate the shape by 45 degrees */
+  margin-left: 4rem;
+  margin-top:0.8rem;   
+  opacity: 0; /* Initially invisible */
+  clip-path: inset(0 0 70% 0); /* Shows only top half */
+  animation: draw-semi-circle 1s ease-out forwards;
+  animation-delay: 4s;
+
+}
+@keyframes draw-semi-circle {
+  0% {
+    border-color: transparent;
+    transform: rotate(60deg) scale(0);
+  }
+  100% {
+    border-color: #1c2b48;
+    transform: rotate(60deg) scale(1);
+    opacity: 1; /* Fully visible */
+  }
+}
+
+@keyframes draw-arc {
+  to {
+    stroke-dashoffset: 0; /* Fully visible */
+    
+  }
+}
+
+.doctor-img2{
+  position: absolute;
+  top: 0; /* Align to the top */
+  width: 100%;
+  margin-top: 3.7rem;
+  opacity: 0; /* Start invisible */
+  transform: translateX(-50%); /* Position off-screen to the left */
+  animation: slideIn 1s ease-out forwards; /* Slide-in animation */
+  animation-delay: 2s;
+}
+
+ /* Slide-in animation */
+ @keyframes slideIn {
+  0% {
+    transform: translateX(-50%); /* Off-screen */
+    opacity: 0; /* Invisible */
+  }
+  100% {
+    transform: translateX(0); /* Fully visible in position */
+    opacity: 1; /* Fully visible */
+  }
+}
+
+.curved-shape3 {
+  width: 100%; /* Full width of the container */
+  max-width: 70px; /* Limit the maximum width for responsiveness */
+  height: 330px; /* Adjust the height as needed */
+  background-color: #00c4e7; /* Light blue color */
+  border-bottom-left-radius: 90px; /* Rounded bottom-left corner */
+  margin-left: 1.7rem;
+ opacity: 0;
+  transform: translateY(90px); /* Start position */
+  animation: slide-in 1s ease-out forwards; /* Trigger animation */
+}
+
+@keyframes slide-in {
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Final position */
+  }
+}
+
+.curved-shape4{
+  width: 100%; /* Full width of the container */
+  max-width: 55px; /* Limit the maximum width for responsiveness */
+  height: 360px; /* Adjust the height as needed */
+  background-color: #00c4e7; /* Light blue color */
+  border-top-right-radius: 90px; /* Rounded bottom-left corner */
+  margin-top: 16rem;
+  opacity: 0;
+  transform: translateY(90px); /* Start position */
+  animation: slide-in 1s ease-out forwards; /* Trigger animation */
+  animation-delay: 1s;
+}
+
+.car-img-fluid{
+  padding-bottom: 3rem;
+}
+
+.headerimg2{
+  width: 100%;
+  
+}
+
+.col-md-1.col-side-img{
+  padding-top: 17rem;
+}
+
+.center-circle{
+  background: #13c5dd;;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.doc-img{
+  position: absolute;
+  top: 50%;
+  left: 71%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+}
+
+.doc-para1{
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+  color:black;
+}
+
+.row.row-contfluid{
+  padding-top: 3rem;
+}
+/*
+.container.blue-div{
+  position: relative;
+  width: 100%;
+  max-width: 480px; 
+  height: 380px;
+  margin: auto; }
+
+.blue-shape{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+}
+
+.carimg{
+  position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+}
+
+.bluediv-carimg{
+   top:60%;
+   transform: translate(0%, -50%);
+   width: 70%;
+}*/
+
+.h3.mission-h3{
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: normal;
+  color:#070738
+}
+
+.mission-para{
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+  color:black
+}
+
+.light-blue-col8{
+padding-top: 2rem;
+}
+
+.heart-dark-blue{
+  width: 80%;
+
+}
+.h5.Dedication-h5{
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: normal;
+  color:#070738
+}
+
+.container.icon1-cont {
+  background-color: #e7f9fb;
+  border-radius: 25px;
+  padding-bottom: 0.3rem;
+}
+
+.icon1-para{
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+  color:black;
+  text-align: justify;
+}
+
+.halfcircleflower{
+  width: 90%;
+}
+
+
+.d-inline-block.leftimage{
+  width: 100%;
+}
+
+
+.col2-mainpara{
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+  text-align: justify;
+  color: black;
+}
+
+.container.blue-cont{
+  width: 65%;
+  background-color: #13c5dd;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+}
+
+.contactnum-para{
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+
+.container.lightblue-cont{
+  width: 65%;
+  background-color:#e7f9fb;
+  padding-top: 0.7rem;
+  padding-bottom: 0.3rem;
+}
+
+.lightblue-para{
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  text-align: center;
+}
+
+.blueshape-container {
+  position: relative;
+  width: 100%;
+  max-width: 346px; /* Adjust size as needed */
+  height:480px;
+  margin: auto;
+
+}
+
+.custom-shape {
+  position: absolute;
+  width: 87%; /* Adjust width as needed */
+  height:270px; /* Adjust height as needed */
+  background-color: #00c0d1; /* Blue color */
+  border-radius: 30px; /* Rounded corners */
+  
+}
+
+.carimg{
+  position: absolute;
+  width: 100%; /* Adjust width as needed */
+  top: 0;
+  left: 0;
+  margin-top: 9rem;
+  margin-left: -1.4rem !important;
+  
+}
+
+.blueshape-main-col{
+  padding-top: 1rem;
+}
+
+/*media quries*/
+
+/*mobile view*/
+@media only screen and (min-width: 300px) and  (max-width:767px){
+  .curved-shape4 {
+    display: none;
+   }
+
+ 
+   .curved-shape3{
+     display: none;
+   }
+   .col-md-1{
+     display: none;
+   }
+   .img-logo{
+     width: 100%;
+ }
+ .container.heading-cont2{
+  padding-top: 1rem !important;
+}
+.circle {
+  display: none;
+
+}
+
+
+.circle-outline {
+display: none;
+
+}
+
+.doctor-img2 img{
+  width: 100%;
+}
+
+.h1.about-us-h1{
+  color: #1f2f4e;
+  font-family: "Poppins", serif;
+  font-weight: 900;
+  font-style: normal;
+  opacity: 0; /* Initially invisible */
+  transform: translateY(20px); /* Positioned slightly above */
+  animation: fadeInTop 1s ease-out forwards; /* Animation settings */
+  }
+  
+  /* Keyframes for Fade-In Effect */
+  @keyframes fadeInTop {
+    0% {
+      opacity: 0;
+      transform: translateY(20px); /* Start from above */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* Settle into the original position */
+    }
+  }
+  
+  .hr-tag2{
+    opacity: 0; /* Start invisible */
+      animation: fadeInFromLeft 1s ease-out forwards;
+      animation-delay: 1s;
+  
+  }
+  
+  /* Keyframes for the animation */
+  @keyframes fadeInFromLeft {
+    0% {
+      width: 0;
+      opacity: 0;
+    }
+    50% {
+      width: 50%; /* Mid-point expansion */
+      opacity: 1;
+    }
+    100% {
+      width: 50%; /* Full width */
+      opacity: 1; /* Fully visible */
+    }
+  }
+
+  .h3.dr-name{
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #13c5dd;
+    margin-top: -0.6rem;
+    opacity: 0; /* Initially invisible */
+    transform: translateY(20px); /* Positioned slightly above */
+    animation: fadeInTop 1s ease-out forwards; /* Animation settings */
+    animation-delay: 2s;
+    
+    }
+    
+    
+    /* Keyframes for Fade-In Effect */
+    @keyframes fadeInTop {
+    0% {
+      opacity: 0;
+      transform: translateY(20px); /* Start from above */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* Settle into the original position */
+    }
+    }
+
+  .h3.Management-name{
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    color:black;
+    margin-top: -0.6rem;
+    overflow: hidden;
+      position: relative;
+      animation: fadeInLeftToRight 1s ease-out forwards;
+      opacity: 0;
+      animation-delay: 3s;
+    
+    }
+    
+    @keyframes fadeInLeftToRight {
+    0% {
+      opacity: 0;               /* Start with text invisible */
+      transform: translateX(-50px); /* Start off-screen to the left */
+    }
+    100% {
+      opacity: 1;               /* Fully visible */
+      transform: translateX(0); /* Move to original position */
+    }
+    }
+    
+    /* Sliding blue color effect */
+    .h3.Management-name::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #00c4e7;
+    animation: slideBlue 1s forwards;
+    animation-delay: 4s;
+    
+    }
+    
+    /* Keyframes for the sliding animation */
+    @keyframes slideBlue {
+    to {
+      left: 100%;
+    
+    }
+    }
+
+    .circle-container {
+      position: relative;
+      width: 100%;
+      max-width: 500px; /* Adjust size as needed */
+      height: 470px;
+      margin: auto;
+      padding-top: 0rem;
+    }
+
+    .doctor-img2{
+      position: absolute;
+      top: 0; /* Align to the top */
+      width: 100%;
+      margin-top: 2rem;
+      opacity: 0; /* Start invisible */
+      transform: translateX(-50%); /* Position off-screen to the left */
+      animation: slideIn 1s ease-out forwards; /* Slide-in animation */
+      animation-delay: 5s;
+    }
+    
+     /* Slide-in animation */
+     @keyframes slideIn {
+      0% {
+        transform: translateX(-50%); /* Off-screen */
+        opacity: 0; /* Invisible */
+      }
+      100% {
+        transform: translateX(0); /* Fully visible in position */
+        opacity: 1; /* Fully visible */
+      }
+    }
+    .blueshape-main-col{
+      padding-top: 0rem;
+    }
+
+    .mob-column-order1{
+      order:2
+    }
+  
+    .car-img-fluid{
+      padding-bottom: 0rem;
+    }
+
+}
+
+/*tablet view*/
+@media only screen and (min-width: 768px) and  (max-width:1024px){
+  .curved-shape4 {
+    display: none;
+   }
+
+ 
+   .curved-shape3{
+     display: none;
+   }
+   .col-md-1{
+     display: none;
+   }
+   .img-logo{
+     width: 100%;
+ }
+
+.circle-container {
+  position: relative;
+  width: 100%;
+  max-width: 500px; /* Adjust size as needed */
+  height: 500px;
+  margin: auto;
+  padding-top: 2rem;
+}
+
+.circle {
+  width: 300px;
+  height: 300px;
+  background-color: #00c0d1; /* Blue color */
+  border-radius: 50%; /* Makes it a circle */
+  opacity: 0; /* Initially invisible */
+  transform: translateY(-20px); /* Positioned slightly above */
+  animation: fadeInTop 1s ease-out forwards; /* Animation settings */
+  animation-delay: 6s;
+
+
+}
+
+ /* Keyframes for Fade-In Effect */
+ @keyframes fadeInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Start from above */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Settle into the original position */
+  }
+}
+
+.circle-outline {
+  display: none;
+
+}
+
+.h1.about-us-h1{
+  color: #1f2f4e;
+  font-family: "Poppins", serif;
+  font-weight: 900;
+  font-style: normal;
+  opacity: 0; /* Initially invisible */
+  transform: translateY(20px); /* Positioned slightly above */
+  animation: fadeInTop 1s ease-out forwards; /* Animation settings */
+  }
+  
+  /* Keyframes for Fade-In Effect */
+  @keyframes fadeInTop {
+    0% {
+      opacity: 0;
+      transform: translateY(20px); /* Start from above */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* Settle into the original position */
+    }
+  }
+  
+  .hr-tag2{
+    opacity: 0; /* Start invisible */
+      animation: fadeInFromLeft 1s ease-out forwards;
+      animation-delay: 1s;
+  
+  }
+  
+  /* Keyframes for the animation */
+  @keyframes fadeInFromLeft {
+    0% {
+      width: 0;
+      opacity: 0;
+    }
+    50% {
+      width: 50%; /* Mid-point expansion */
+      opacity: 1;
+    }
+    100% {
+      width: 50%; /* Full width */
+      opacity: 1; /* Fully visible */
+    }
+  }
+
+  .h3.dr-name{
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #13c5dd;
+    margin-top: -0.6rem;
+    opacity: 0; /* Initially invisible */
+    transform: translateY(20px); /* Positioned slightly above */
+    animation: fadeInTop 1s ease-out forwards; /* Animation settings */
+    animation-delay: 2s;
+    
+    }
+    
+    
+    /* Keyframes for Fade-In Effect */
+    @keyframes fadeInTop {
+    0% {
+      opacity: 0;
+      transform: translateY(20px); /* Start from above */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* Settle into the original position */
+    }
+    }
+
+  .h3.Management-name{
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    color:black;
+    margin-top: -0.6rem;
+    overflow: hidden;
+      position: relative;
+      animation: fadeInLeftToRight 1s ease-out forwards;
+      opacity: 0;
+      animation-delay: 3s;
+    
+    }
+    
+    @keyframes fadeInLeftToRight {
+    0% {
+      opacity: 0;               /* Start with text invisible */
+      transform: translateX(-50px); /* Start off-screen to the left */
+    }
+    100% {
+      opacity: 1;               /* Fully visible */
+      transform: translateX(0); /* Move to original position */
+    }
+    }
+    
+    /* Sliding blue color effect */
+    .h3.Management-name::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #00c4e7;
+    animation: slideBlue 1s forwards;
+    animation-delay: 4s;
+    
+    }
+    
+    /* Keyframes for the sliding animation */
+    @keyframes slideBlue {
+    to {
+      left: 100%;
+    
+    }
+    }
+
+    .doctor-img2{
+      position: absolute;
+      top: 0; /* Align to the top */
+      width: 100%;
+      margin-top: 2rem;
+      opacity: 0; /* Start invisible */
+      transform: translateX(-50%); /* Position off-screen to the left */
+      animation: slideIn 1s ease-out forwards; /* Slide-in animation */
+      animation-delay: 5s;
+    }
+    
+     /* Slide-in animation */
+     @keyframes slideIn {
+      0% {
+        transform: translateX(-50%); /* Off-screen */
+        opacity: 0; /* Invisible */
+      }
+      100% {
+        transform: translateX(0); /* Fully visible in position */
+        opacity: 1; /* Fully visible */
+      }
+    }
+
+    .car-img-fluid{
+      padding-bottom: 1rem;
+    }
+
+    .mob-column-order1{
+      order:2
+    }
+    .blueshape-main-col{
+      padding-top: 0rem;
+    }
+
+}
+/*about us css ends */
+
+/*contact us css starts */
+
+.curved-shape5 {
+    width: 100%; /* Full width of the container */
+    max-width: 70px; /* Limit the maximum width for responsiveness */
+    height: 330px; /* Adjust the height as needed */
+    background-color: #00c4e7; /* Light blue color */
+    border-bottom-left-radius: 90px; /* Rounded bottom-left corner */
+    opacity: 0;
+    transform: translateY(90px); /* Start position */
+    animation: slide-in 1s ease-out forwards; /* Trigger animation */
+   margin-left: 1.7rem;
+  }
+
+  @keyframes slide-in {
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Final position */
+    }
+  }
+
+  .container.contact-cont{
+    padding-top: 2rem;
+    
+}
+
+.h1.Contact-h1{
+    font-family: "Poppins", serif;
+  font-weight: 900;
+  font-style: normal;
+  color: #1f2f4e;
+  opacity: 0; /* Start invisible */
+  transform: translateX(-50%); /* Position off-screen to the left */
+  animation: slideIn 1s ease-out forwards; /* Slide-in animation */
+  animation-delay: 1s;
+}
+
+  /* Slide-in animation */
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-50%); /* Off-screen */
+      opacity: 0; /* Invisible */
+    }
+    100% {
+      transform: translateX(0); /* Fully visible in position */
+      opacity: 1; /* Fully visible */
+    }
+  }
+
+  .h3.touch-h3{
+    font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #13c5dd;
+  opacity: 0; /* Initially invisible */
+  transform: translateY(20px); /* Positioned slightly above */
+  animation: fadeInTop 1s ease-out forwards; /* Animation settings */
+  animation-delay: 2s;
+}
+
+
+  /* Keyframes for Fade-In Effect */
+  @keyframes fadeInTop {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px); /* Start from above */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* Settle into the original position */
+    }
+  }
+
+  .h4.feelfree-h4{
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 1.5;
+    opacity: 0; /* Initially invisible */
+    transform: translateY(20px); /* Positioned slightly above */
+    animation: fadeInTop 1s ease-out forwards; /* Animation settings */
+    animation-delay: 3s;
+
+}
+
+.span-contactus{
+    text-decoration: underline;
+     text-decoration-color: #13c5dd; 
+     font-weight: 700; 
+     color: #1f2f4e;
+     text-decoration-style: solid;
+     text-underline-offset: 8px;
+     text-decoration-thickness: 4px;
+     opacity: 0; /* Initially invisible */
+     transform: translateY(20px); /* Positioned slightly above */
+    animation: fadeInTop 1s ease-out forwards; /* Animation settings */
+    animation-delay: 3s;
+}
+
+.h3.Question-h3{
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #13c5dd;
+    opacity: 0; /* Initially invisible */
+    transform: translateY(20px); /* Positioned slightly above */
+    animation: fadeInTop 0.5s ease-out forwards; /* Animation settings */
+    animation-delay: 5s;
+}
+
+.label-text{
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    color: black;
+}
+
+.form-control.input-text{
+    border-radius: 20px;
+    border: none;
+}
+
+.container.form-container{
+    border-radius: 20px 20px 20px 20px;
+    background: #F0F0F0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    padding-bottom: 1rem;
+    opacity: 0; /* Start invisible */
+    transform: translateX(-50%); /* Position off-screen to the left */
+    animation: slideIn 1s ease-out forwards; /* Slide-in animation */
+    animation-delay: 5s;
+
+}
+
+ /* Slide-in animation */
+ @keyframes slideIn {
+    0% {
+      transform: translateX(-50%); /* Off-screen */
+      opacity: 0; /* Invisible */
+    }
+    100% {
+      transform: translateX(0); /* Fully visible in position */
+      opacity: 1; /* Fully visible */
+    }
+  }
+
+  .btn.btn-submit{
+    background-color: #13c5dd;
+    color: white;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.btn.btn-submit::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#1f2f4e;
+    transform: translateX(-100%);
+    transition: all 0.3s linear;
+}
+
+.btn.btn-submit:hover::before{
+    transform: translateX(0);
+    z-index: -1;
+}
+
+.btn.btn-submit:hover,
+.btn.btn-submit:active,
+.btn.btn-submit:focus{
+    color: white;
+}
+
+.h5-address{
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    color: black;
+}
+
+.container.contactinfo-container{
+    padding-top: 19rem;
+}
+
+.headerimg2{
+    width: 100%;
+}
+
+.map-conttainer{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+/*media quries*/
+
+/*mobile view*/
+@media only screen and (min-width: 300px) and  (max-width:767px){
+    .col-md-1{
+       display: none;
+    }
+
+    .img-logo{
+        width: 100%;
+    }
+
+    .curved-shape5{
+        display: none;
+    }
+
+    .container.contactinfo-container{
+        padding-top: 3rem;
+    }
+
+    .h5-address{
+        font-family: "Poppins", serif;
+        font-weight: 500;
+        font-style: normal;
+        color: black;
+    }
+} 
+
+
+/*tablet view*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .col-md-1{
+        display: none;
+     }
+ 
+     .img-logo{
+         width: 100%;
+     }
+ 
+     .curved-shape5{
+         display: none;
+     }
+
+}
+/*contact us css ends*/
+
+/*accepted css starts*/
+.container.doctorimg{
+  padding-top: 1rem;
+  opacity: 0; /* Start invisible */
+  transform: translateX(-50%); /* Position off-screen to the left */
+  animation: slideIn 1s ease-out forwards; /* Slide-in animation */
+  animation-delay: 1s
+}
+
+ /* Slide-in animation */
+@keyframes slideIn {
+ 0% {
+   transform: translateX(-50%); /* Off-screen */
+   opacity: 0; /* Invisible */
+ }
+ 100% {
+   transform: translateX(0); /* Fully visible in position */
+   opacity: 1; /* Fully visible */
+ }
+}
+.h1.h1-Accepted{
+
+  font-family: "Poppins", serif;
+  font-weight: 900;
+  font-style: normal;
+  color: #1f2f4e;
+  text-transform: uppercase;
+  opacity: 0; /* Initially invisible */
+  transform: translateY(20px); /* Positioned slightly above */
+  animation: fadeInTop 1s ease-out forwards; /* Animation settings */
+  animation-delay: 2s;
+  
+}
+
+/* Keyframes for Fade-In Effect */
+@keyframes fadeInTop {
+ 0% {
+   opacity: 0;
+   transform: translateY(20px); /* Start from above */
+ }
+ 100% {
+   opacity: 1;
+   transform: translateY(0); /* Settle into the original position */
+ }
+}
+.hr-tag3{
+  opacity: 0;
+  animation: fadeInFromLeft 1s ease-out forwards;
+  animation-delay: 3s
+}
+
+/* Keyframes for the animation */
+@keyframes fadeInFromLeft {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  50% {
+    width: 50%; /* Mid-point expansion */
+    opacity: 0.5;
+  }
+  100% {
+    width: 100%; /* Full width */
+    opacity: 1; /* Fully visible */
+  }
+}
+
+.p-Accepted{
+
+  font-family: "Poppins", serif;
+  font-weight: 500;    
+  font-style: normal;
+  color:black;
+  opacity: 0; /* Initially invisible */
+  transform: translateY(-20px); /* Positioned slightly above */
+  animation: fadeInTop 1s ease-out forwards; /* Animation settings */
+  opacity: 0; /* Initially invisible */
+  transform: translateY(-20px); /* Positioned slightly above */
+  animation: fadeInTop 1s ease-out forwards; /* Animation settings */
+  animation-delay: 4s
+ }
+
+  /* Keyframes for Fade-In Effect */
+@keyframes fadeInTop {
+ 0% {
+   opacity: 0;
+   transform: translateY(20px); /* Start from above */
+ }
+ 100% {
+   opacity: 1;
+   transform: translateY(0); /* Settle into the original position */
+ }
+}
+
+.col-md-6.accepted-container{
+  padding-top: 2rem;
+  text-align: justify;
+
+}
+
+.row.ul-row-class{
+ opacity: 0; /* Initially invisible */
+ transform: translateY(20px); /* Positioned slightly above */
+ animation: fadeInTop 1s ease-out forwards; /* Animation settings */
+ animation-delay: 5s;
+}
+
+/* Keyframes for Fade-In Effect */
+@keyframes fadeInTop {
+ 0% {
+   opacity: 0;
+   transform: translateY(20px); /* Start from above */
+ }
+ 100% {
+   opacity: 1;
+   transform: translateY(0); /* Settle into the original position */
+ }
+}
+.col-md-4 ul li{
+  font-family: "Poppins", serif;
+  font-weight: 500;    
+  font-style: normal;
+  color:black
+}
+
+.h2.h2-Sure{
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #1f2f4e;
+}
+
+.h4.h4-Coverage{
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: normal;
+  color: black;
+}
+
+.h4.h4-Assistance{
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: normal;
+  color: black;
+
+}
+
+.container.white-container1{
+  background-color: white;
+  padding-top: 2rem;
+  padding-bottom: 1.8rem;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* Bottom shadow */
+}
+
+.container.white-container2{
+  background-color: white;
+  padding-top: 2rem;
+  padding-bottom: 0.3rem;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* Bottom shadow */
+}
+
+.p-Coverage{
+  font-family: "Poppins", serif;
+  font-weight: 500;    
+  font-style: normal;
+  color:black
+}
+
+
+.p-Assistance{
+  font-family: "Poppins", serif;
+  font-weight: 500;    
+  font-style: normal;
+  color:black
+}
+
+.h1.h1-faq{
+  font-family: "Poppins", serif;
+  font-weight: 900;
+  font-style: normal;
+  color: #1f2f4e;
+}
+
+.p-ques1{
+  font-family: "Poppins", serif;
+  font-weight: 600;    
+  font-style: normal;
+  color:#26375a;
+  display: inline-flex;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  text-decoration-line: underline;
+  text-underline-position: under;
+  text-decoration-color:#13c5dd;
+  text-decoration-thickness: 4px;
+}
+
+.p-ans1{
+  font-family: "Poppins", serif;
+  font-weight: 500;    
+  font-style: normal;
+  color:black;
+}
+
+
+.col-md-6.faq-ques-col{
+ padding-top: 6rem;
+}
+
+.h3.h3-chooseus{
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #1f2f4e;
+}
+
+.p-chooseus{
+  font-family: "Poppins", serif;
+  font-weight: 500;    
+  font-style: normal;
+  color:black;
+  text-align: justify;
+}
+
+/*mobile view*/
+@media only screen and (min-width: 300px) and  (max-width:767px){
+  .col-md-1{
+     display: none;
+  }
+
+  .img-logo{
+     width: 100%;
+ }
+
+ .mob-white-col{
+  padding-bottom: 2rem;
+ }
+
+ .col-md-6.faq-ques-col{
+  padding-top: 2rem;
+}
+
+.col-md-4.mob-img-col{
+  order: 2;
+}
+ 
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) 
+{
+  .col-md-1{
+     display: none;
+  }
+  .img-logo{
+     width: 100%;
+ }
+ .col-md-6.faq-ques-col{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+}
+
+/*accepted css ends*/
+
+
+.curved-shape8 {
+  width: 100%; /* Full width of the container */
+  max-width: 70px; /* Limit the maximum width for responsiveness */
+  height: 330px; /* Adjust the height as needed */
+  background-color: #00c4e7; /* Light blue color */
+  border-bottom-left-radius: 90px; /* Rounded bottom-left corner */
+  opacity: 0;
+  transform: translateY(90px); /* Start position */
+  animation: slide-in 1s ease-out forwards; /* Trigger animation */
+ margin-left: 1.7rem;
+}
+
+@keyframes slide-in {
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Final position */
+  }
+}
+
+.curved-shape7{
+  width: 100%; /* Full width of the container */
+  max-width: 55px; /* Limit the maximum width for responsiveness */
+  height: 360px; /* Adjust the height as needed */
+  background-color: #00c4e7; /* Light blue color */
+  border-top-right-radius: 90px; /* Rounded bottom-left corner */
+  margin-top: 18rem;
+  opacity: 0;
+  transform: translateY(90px); /* Start position */
+  animation: slide-in 1s ease-out forwards; /* Trigger animation */
+  animation-delay: 1s;
+}
+
+.h1.h1-req{
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #1f2f4e;
+  text-transform: uppercase;
+  opacity: 0; /* Initially invisible */
+  transform: translateY(20px); /* Positioned slightly above */
+  animation: fadeInTop 1s ease-out forwards; /* Animation settings */
+  animation-delay: 2s;
+}
+
+/* Keyframes for Fade-In Effect */
+@keyframes fadeInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Start from above */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Settle into the original position */
+  }
+}
+
+.label-text1{
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+  color: black;
+}
+
+.form-control.input-text1{
+  border-radius: 20px;
+  border: none;
+}
+
+.container.form-container1{
+  border-radius: 20px 20px 20px 20px;
+  background: #F0F0F0;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  padding-bottom: 1rem;
+  opacity: 0; /* Start invisible */
+  transform: translateX(-50%); /* Position off-screen to the left */
+  animation: slideIn 1s ease-out forwards; /* Slide-in animation */
+  animation-delay: 3s;
+
+}
+
+/* Slide-in animation */
+@keyframes slideIn {
+  0% {
+    transform: translateX(-50%); /* Off-screen */
+    opacity: 0; /* Invisible */
+  }
+  100% {
+    transform: translateX(0); /* Fully visible in position */
+    opacity: 1; /* Fully visible */
+  }
+}
+
+.btn.btnn-submit{
+  background-color: #13c5dd;
+  color: white;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: normal;
+  border-radius: 20px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.btn.btnn-submit::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:#1f2f4e;
+  transform: translateX(-100%);
+  transition: all 0.3s linear;
+}
+
+.btn.btnn-submit:hover::before{
+  transform: translateX(0);
+  z-index: -1;
+}
+
+.btn.btnn-submit:hover,
+.btn.btnn-submit:active,
+.btn.btnn-submit:focus{
+  color: white;
+}
+
+.requestform-container{
+  padding-top: 4rem;
+}
+
+.reqh1-cont{
+  padding-top: 15rem;
+}
+
+@media only screen and (min-width: 300px) and  (max-width:767px){
+  .requestform-container{
+      padding-top: 3rem;
+    
+  }
+  
+  .reqh1-cont{
+      padding-top: 0rem;
+  }
+
+  .curved-shape8 {
+      display: none;
+     }
+
+     .curved-shape7{
+   display: none
+    }
+
+    .img-logo{
+      width: 100%;
+  }
+
+}
+
+/*request form css ends*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Footer CSS */
+    
+.h4.intouch-h4{
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: normal;
+    color:#13c5dd
+}
+
+.bi.bi-telephone-fill{
+  
+    color: #13c5dd;
+}
+
+.bi.bi-printer-fill{
+
+    color: #13c5dd;
+}
+
+.bi.bi-envelope-check-fill{
+    color: #13c5dd;
+}
+
+.number-footerpara{
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    color:black;
+    padding-left: 1rem;
+}
+
+.h5.address-h5{
+    color: #13c5dd;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.address-para{
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    color:black;
+}
+
+.h4.links-h4{
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+    color:#13c5dd;
+    text-decoration: underline;
+    text-decoration-color: #13c5dd;
+    text-underline-position: under;
+}
+
+.nav-link.footer-nav{
+    list-style: none;
+    text-decoration: none;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    color:black;
+    transform: scale(1);
+    transition: 400ms;
+    overflow:hidden !important;
+}
+
+.nav-link.footer-nav:hover{
+
+    text-decoration: underline;
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+    color:#13c5dd;
+    transform: scale(1.1); 
+    transition: 400ms;
+    cursor: pointer;
+}
+
+.h5.scancode-para{
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+    color:black;
+
+}
+
+.copyright-para{
+  color: black;
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+.hr-footer{
+    color: #1f2f4e;
+}
+
+.mx-auto.fbicon{
+    transition: 0.3s;
+}
+
+.mx-auto.fbicon:hover{
+    transform: scale(1.2);
+}
+
+.mx-auto.instaicon{
+    transition: 0.3s;
+}
+
+.mx-auto.instaicon:hover{
+    transform: scale(1.2);
+}
+
+
+
+
+
+
